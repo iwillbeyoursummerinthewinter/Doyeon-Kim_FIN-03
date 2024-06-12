@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.typekit.net/ron7lts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+	<title>My Yemini Type</title>
+
+	<style>
+
+    body, html {
+    font-family: "noka", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+  }
+
+    .gothic-a1-semibold {
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  	.largeCell {
+  	font-size: 2 rem;
+  	transition: font-size 0.3s ease;
+  }
+
+  td {
+      cursor: pointer;
+      vertical-align: middle;
+      text-align: center; 
+      transform: translateY(-220px);
+    }
+
+  	
+	</style>
+
+</head>
+
+	<body>
+
+	<div id="container">
+      <div id="title" style="font-size: 3rem;
+      line-height: 50px; word-break: keep-all; display: absolute;">
+      	My Yemini Type
+      	<br>
+      	나는 어떤 예민이일까?
+    </div>
+
+    <div>
+    <img src="Yemini_Type.jpg" width="100%" height="auto">
+	</div>
+
+	<table style="width: 30%; margin-top: 300px; text-align: center;">
+    <tbody id="table-0" style="text-align: center;">
+    	<tr>
+    		<td onclick="toggleSolution()">Solutions for Yeminis
+    			<br> 예민이 처방전 </td>
+			
+    	</tr>
+    </tbody>
+    </table>	
+
+    <div>
+    <img id="solution" src="Yemini_Solutions.jpg" width="100%" height="auto" style="display: none;">
+	</div>
+
+<script>
+    function toggleSolution() {
+        var img = document.getElementById("solution");
+        if (img.style.display === "none") {
+            img.style.display = "block";
+        } else {
+            img.style.display = "none";
+        }
+    }
+</script>
+
+
+
+</body>
+</html>
